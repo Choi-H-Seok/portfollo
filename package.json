@@ -10,8 +10,10 @@
     "@types/node": "^16.18.105",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/react-router-dom": "^5.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
@@ -21,7 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gs-pages -d build"
+    "build:css": "npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +45,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "daisyui": "^4.12.10",
+    "gh-pages": "^6.1.1",
+    "tailwindcss": "^3.4.10"
   },
   "homepage": "https://choi-h-seok.github.io/portfollo/"
 }
