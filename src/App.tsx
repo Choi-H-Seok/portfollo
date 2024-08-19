@@ -6,7 +6,7 @@ import Navbar from "./Component/Navbar";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfollo">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
